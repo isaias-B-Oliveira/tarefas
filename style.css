@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400&family=Roboto+Mono:ital,wght@0,300;0,400;0,600;1,300;1,500&family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap');
+
+*{
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #18181b;
+}
+#container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#calculator{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    color: #f8fafc;
+    background-color: #262626;
+    border-radius: 8px;
+}
+#form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+#title{
+    font-size: 24px;
+    position: relative;
+}
+#title::after{
+    position: absolute;
+    content: "";
+    background-color: #16a34a;
+    width: 80px;
+    height: 3px;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px;
+}
+.input-box label{
+    font-size: 15px;
+    color: #cbd5e1;
+    font-weight: 400;
+}
+.input-field{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #58585a;
+    padding: 5px;
+    border-radius: 3px;
+    margin-top: 3px;
+}
+.input-field span,
+.input-field i{
+    color: #cbd5e1;
+    font-size: 16px;
+    padding: 0.6rem 1rem;
+}
+.input-field input{
+    background-color: transparent;
+    border: none;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #f8fafc;
+}
+.input-field input:focus{
+    outline: none;
+}
+#caculate{
+    border: none;
+    font-size: 1.25rem;
+    background-color: #16a34a;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#caculate i{
+    margin-left: 20px;
+}
+#result{
+    display: flex;
+    text-align: center;
+    gap: 2rem;
+    align-items: center;
+    border-radius: 1px solid #c9baba85;
+    padding: 0.75rem 0; 
+}
+#bmi{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+#bmi span:last-child {
+    font-size: 2rem;
+    color: #cbd5e1;
+}
+#description{
+    width: 15.5rem;
+}
+/*  */
+.hidden{
+    display: none;
+}
+
+/*  */

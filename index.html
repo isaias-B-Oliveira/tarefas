@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+			integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>calculadora de tarefas</title>
+	</head>
+	<body>
+		<main id="container">
+			<section id="calculator">
+				<form id="form">
+					<h1 id="title">calculadora-Tarefas </h1>
+					<p>Por favor digite as medidas en braças da Maior para Menor</p>
+
+					<div class="input-box">
+						<label for="weight">1º Maior Medida</label>
+						<dic class="input-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" id="medida1" required>
+                            <span>1º</span>
+                        </dic>
+					</div>
+
+                    <div class="input-box">
+						<label for="height">2º Maior Medida</label>
+						<dic class="input-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" id="medida2" required>
+                            <span>2º</span>
+                        </dic>
+					</div>
+					<div class="input-box">
+						<label for="height">3° Maior Medida</label>
+						<dic class="input-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" id="medida3" required>
+                            <span>3º</span>
+                        </dic>
+					</div>
+					<div class="input-box">
+						<label for="height">4º Medida</label>
+						<dic class="input-field">
+                            <i class="fa-solid fa-ruler"></i>
+                            <input type="number" id="medida4" required>
+                            <span>4º</span>
+                        </dic>
+					</div>
+
+                    <button id="caculate">Calcular
+						<i class="fa-solid fa-calculator"></i>
+					</button>
+
+				</form>
+                <div id="infos" class="hidden">
+                    <div id="result">
+                        <div id="bmi">
+							<span>Sua terra tem </span>
+                            <span id="value"></span>
+                            <span>Tarefas </span>
+                        </div>
+                        <div id="descriptiom">
+                            <span></span>
+                        </div>
+                    </div>
+                    
+                </div>
+			</section>
+		</main>
+		
+
+        <script src="script.js"></script>
+	</body>
+</html>
