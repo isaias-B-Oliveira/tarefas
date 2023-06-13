@@ -87,9 +87,10 @@ body{
     cursor: pointer;
 }
 #caculate i{
-    margin-left: 20px;
+    margin-right: 20px;
 }
 #result{
+    width: 100%;
     display: flex;
     text-align: center;
     gap: 2rem;
@@ -107,12 +108,40 @@ body{
     font-size: 2rem;
     color: #cbd5e1;
 }
-#description{
-    width: 15.5rem;
+/* #description{
+    width: 100%;
+} */
+#limpar{
+    border: none;
+    font-size: 1.25rem;
+    background-color: #16a34a;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#limpar i{
+    margin-right: 15px;
+}
+#voltar{
+    border: none;
+    font-size: 1.25rem;
+    background-color: #16a34a;
+    color: #f8fafc;
+    padding: 0.5rem 0;
+    border-radius: 3px;
+    cursor: pointer;
+}
+#voltar i{
+    margin-right: 15px;
+}
+@media screen and (max-width: 450px){
+    .input-field{
+        border-bottom: 2px solid #16a34a;
+        border-left: 2px solid #c3c4c3;
+    }
 }
 /*  */
 .hidden{
     display: none;
 }
-
-/*  */
